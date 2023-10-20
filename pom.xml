@@ -13,6 +13,7 @@
         <module>Simulation</module>
         <module>TrafficControlService</module>
         <module>VehicleRegistrationService</module>
+        <module>UserManagementService</module>
     </modules>
 
     <properties>
