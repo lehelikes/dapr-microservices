@@ -1,7 +1,6 @@
 package dapr.controller;
 
 import dapr.dto.ScheduleTelescopeInDto;
-import dapr.model.ScheduleTelescope;
 import dapr.service.ScheduleService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +22,6 @@ public class ScheduleController {
     @Autowired
     public ScheduleController(ScheduleService scheduleService) {
         this.scheduleService = scheduleService;
-        log.info("ScheduleController created");
     }
 
     @PostMapping(path = "/schedule")

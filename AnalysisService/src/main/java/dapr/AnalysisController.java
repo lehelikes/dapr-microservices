@@ -8,23 +8,23 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TrafficController {
-    private static final Logger log = LoggerFactory.getLogger(TrafficController.class);
+public class AnalysisController {
+    private static final Logger log = LoggerFactory.getLogger(AnalysisController.class);
 
     private final AnalyseResultClient analyseResultClient;
 
-    public TrafficController(final AnalyseResultClient analyseResultClient) {
+    public AnalysisController(final AnalyseResultClient analyseResultClient) {
         this.analyseResultClient = analyseResultClient;
     }
 
     @PostMapping(path = "/exitcam")
-    public ResponseEntity<Void> vehicleExit() {
-        handlePossibleSpeedingViolation();
+    public ResponseEntity<Void> analyseResult() {
+        sendingAnalyseResult();
         return ResponseEntity.accepted().build();
     }
 
-    private void handlePossibleSpeedingViolation() {
-        log.info("Speeding violation by vehicle {} detected: {} km/h");
+    private void sendingAnalyseResult() {
+        log.info("Sending analysis result");
 
         analyseResultClient.analyseResultSend();
     }

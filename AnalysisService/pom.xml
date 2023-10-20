@@ -8,7 +8,7 @@
 	</parent>
 	<artifactId>analysis-service</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>Traffic Control Service</name>
+	<name>Analysis Service</name>
 
 	<dependencies>
 		<dependency>

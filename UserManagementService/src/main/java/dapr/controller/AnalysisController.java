@@ -21,6 +21,5 @@ public class AnalysisController {
     	log.info("Got analysis result: {}", event.getData());
         return ResponseEntity.ok().build();
     }
-
     
 }

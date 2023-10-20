@@ -14,7 +14,7 @@ import io.dapr.serializer.DefaultObjectSerializer;
 
 
 @Configuration
-public class TrafficControlConfiguration {
+public class AnalysisConfiguration {
 	
 	static class JsonObjectSerializer extends DefaultObjectSerializer {
 	    public JsonObjectSerializer() {

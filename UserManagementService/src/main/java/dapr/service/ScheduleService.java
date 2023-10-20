@@ -35,7 +35,8 @@ public class ScheduleService {
                 data.getLensType()
         );
 
-        log.info("Publishing event: {}", scheduleTelescope);
+        log.info("Publishing event: {}", TOPIC_SCHEDULE);
+        log.info("Publishing scheduleTelescope: {}", scheduleTelescope);
         daprClient.publishEvent(PUBSUB, TOPIC_SCHEDULE, scheduleTelescope).block();
     }
 }
