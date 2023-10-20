@@ -7,6 +7,7 @@ spec:
   version: v1
   metadata:
     - name: connectionString # Required when not using Azure Authentication.
-      value: "<IDE TEDD BE AZ AZURE SERVICE BUS TOPIC-NAK A CONNECTION STRING-JET"
+      value: "<IDE TEDD BE AZ AZURE SERVICE NAMESPACE-NEK A CONNECTION STRING-JET"
 scopes:
   - usermanagementservice
+  # Tobbi service-eket ide tedd be

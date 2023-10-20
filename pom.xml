@@ -9,11 +9,8 @@
     <name>Dapr Workshop</name>
 
     <modules>
-        <module>FineCollectionService</module>
-        <module>Simulation</module>
-        <module>TrafficControlService</module>
-        <module>VehicleRegistrationService</module>
         <module>UserManagementService</module>
+        <module>AnalysisService</module>
     </modules>
 
     <properties>
