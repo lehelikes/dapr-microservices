@@ -7,7 +7,8 @@ spec:
   version: v1
   metadata:
     - name: connectionString # Required when not using Azure Authentication.
-      value: "Endpoint=sb://pubsub.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=eA1c6zOcHA2UoWWD7Jb62BsTWpCRVDTD/+ASbDkaQ6Q="
+      value: "<PUT AZURE SERVICE BUS NAMESPACE CONNECTION URL HERE>"
 scopes:
   - usermanagementservice
+  - analysisservice
   # Tobbi service-eket ide tedd be
